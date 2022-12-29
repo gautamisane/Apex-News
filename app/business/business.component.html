@@ -1,0 +1,19 @@
+<h3 style="text-align: center; padding-top: 15px;">Tech Headlines</h3>
+<marquee>
+    <h5>For more updates follow us on Instagram @apexnews</h5>
+</marquee>
+<div *ngFor="let dn of dummy" class="col-md-3 display">
+    <div class="container mt-3">
+        <div class="card bg-light text-dark">
+            <div class="row ">
+                <div class="col">
+                    <img class="card-img-top img" src="{{dn.urlToImage}}" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h6 class="card-title">{{dn.title}}</h6>
+                        <a href="#" class="btn btn-primary size-btn" target="_blank" [href]="dn.url">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
